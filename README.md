@@ -97,15 +97,16 @@ Wait 5–10 seconds for Faust to initialize, then start the producer. Prediction
 
 ## Project Structure
 
+```
 kafka-bike/
 ├── producer.py           # Reads CSV → publishes to raw-data topic
 ├── app.py                # Faust agent: raw-data → ML predict → predictions topic
 ├── consumer.py           # Reads predictions topic → prints to console
 ├── train_model.py        # Offline training script (run once)
-├── model.pkl             # Trained Random Forest model
 ├── hour.csv              # UCI Bike Sharing dataset
 ├── requirements.txt      # Python dependencies
 └── README.md
+```
 
 ## Video Demo
 [Watch the demo video here](https://your-video-link-here)
